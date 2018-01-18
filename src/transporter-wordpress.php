@@ -2,7 +2,7 @@
 /**
  * Transporter loader.
  *
- * @package APIAPITransporterWordPress
+ * @package APIAPI\Transporter_WordPress
  * @since 1.0.0
  */
 
