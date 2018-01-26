@@ -2,7 +2,7 @@
   "name": "api-api/transporter-wordpress",
   "description": "Transporter implementation for WordPress.",
   "version": "1.0.0",
-  "license": "GPL-3.0",
+  "license": "GPL-2.0-or-later",
   "keywords": [
     "api-api",
     "transporter",
