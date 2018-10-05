@@ -66,6 +66,10 @@ if ( ! class_exists( 'APIAPI\Transporter_WordPress\Transporter_WordPress' ) ) {
 				throw new Request_Transport_Exception( sprintf( 'The request to %1$s could not be sent: %2$s', $url, $response_data->get_error_message() ) );
 			}
 
+			if ( $response_data['headers'] instanceof \Requests_Utility_CaseInsensitiveDictionary ) {
+				$response_data['headers'] = $response_data['headers']->getAll();
+			}
+
 			// Cookies are not supported at this point.
 			if ( isset( $response_data['cookies'] ) ) {
 				unset( $response_data['cookies'] );
